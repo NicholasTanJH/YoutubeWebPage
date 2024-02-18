@@ -1,0 +1,173 @@
+.header {
+  height: 60px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-color: rgb(223, 223, 223);
+  z-index: 100;
+}
+
+.left-section {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  height: 25px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.youtube-logo {
+  height: 20px;
+}
+
+.mid-section {
+  flex: 1;
+  margin-right: 25px;
+  margin-left: 25px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar{
+  width: 0px;
+  height: 34px;
+  flex: 1;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: rgb(197, 197, 197);
+  border-radius: 3px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .15);
+}
+
+.search-bar::placeholder{
+  font-size: 16px;
+}
+
+.search-button{
+  background-color: rgb(243, 243, 243);
+  height: 38px;
+  width: 60px;
+  border-width: 1px;
+  border-color: rgb(197, 197, 197);
+  border-radius: 3px;
+  margin-left: -1px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .15);
+}
+
+.search-button,
+.voice-button,
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notification-icon-container,
+.own-channel-icon-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button .tool-tip,
+.voice-button .tool-tip,
+.upload-icon-container .tool-tip,
+.youtube-apps-icon-container .tool-tip,
+.notification-icon-container .tool-tip,
+.own-channel-icon-container .tool-tip{
+  position: absolute;
+  background-color: rgb(138, 138, 138);
+  font-size: 15px;
+  font-family: Roboto, Arial;
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+  bottom: -40px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tool-tip,
+.voice-button:hover .tool-tip,
+.upload-icon-container:hover .tool-tip,
+.youtube-apps-icon-container:hover .tool-tip,
+.notification-icon-container:hover .tool-tip,
+.own-channel-icon-container:hover .tool-tip{
+  opacity: 1;
+}
+
+.search{
+  margin-top: 4px;
+  height: 25px;
+}
+
+.voice-button{
+  height: 40px;
+  width: 40px;
+  margin-left: 25px;
+  border-radius: 100px;
+  border: none;
+  background-color: rgb(232, 232, 232);
+}
+
+.right-section {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.upload-icon{
+  width: 30px;
+}
+
+.youtube-apps-icon{
+  width: 30px;
+}
+
+.notification-icon-container{
+  position: relative;
+}
+
+.notifications-icon{
+  width: 30px;
+}
+
+.notification-number{
+  color: white;
+  background-color: rgb(223, 0, 0);
+  border-radius: 50px;
+
+  position: absolute;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  right: 0;
+  top: 0;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.own-channel-icon{
+  width: 40px;
+  border-radius: 20px;
+}

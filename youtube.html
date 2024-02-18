@@ -3,147 +3,412 @@
 
 <head>
   <title>Youtube</title>
-  <link rel="stylesheet" href="youtube.css">
+
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <input class="search-bar" type="text" placeholder="Search">
+  <header class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+      <img class="youtube-logo" src="icons/youtube-logo.svg">
+    </div>
+    <div class="mid-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search" src="icons/search.svg">
+        <div class="tool-tip">Search</div>
+      </button>
+      <button class="voice-button">
+        <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+        <div class="tool-tip">Voice Search</div>
+      </button>
+    </div>
+    <div class="right-section">
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="icons/upload.svg">
+        <div class="tool-tip">Upload</div>
+      </div>
+      <div class="youtube-apps-icon-container">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="tool-tip">Youtube Apps</div>
+      </div>
+      <div class="notification-icon-container">
+        <img class="notifications-icon" src="icons/notifications.svg">
+        <div class="notification-number">5</div>
+        <div class="tool-tip">Notification</div>
+      </div>
+      <div class="own-channel-icon-container">
+        <img class="own-channel-icon" src="channels/own-channel.jpg">
+        <div class="tool-tip">Your Channel</div>
+      </div>
 
-  <div class="video-grid">
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/thumbnail1.jpeg">
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-picture">
-          <img class="profile-picture" src="channels/channel1.jpg">
-        </div>
-        <div class="video-info">
-          <p class="video-title">
-            Fable 2 but it is 2024
-          </p>
-          <p class="video-author">
-            Call Me Kevin
-          </p>
-          <p class="video-stats">
-            284K views &#x2022; 1 day ago
-          </p>
-        </div>
-      </div>
     </div>
+  </header>
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/thumbnail2.jpeg">
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-picture">
-          <img class="profile-picture" src="channels/channel2.jpg">
-        </div>
-        <div class="video-info">
-          <p class="video-title">
-            10 GIANT Products that Actually Work!
-          </p>
-          <p class="video-author">
-            DOPE or NOPE
-          </p>
-          <p class="video-stats">
-            6.6M views &#x2022; 4 years ago
-          </p>
-        </div>
-      </div>
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <img src="icons/home.svg">
+      <div>Home</div>
     </div>
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/thumbnail3.jpg">
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-picture">
-          <img class="profile-picture" src="channels/channel3.jpg">
-        </div>
-        <div class="video-info">
-          <p class="video-title">
-            We're Getting Brave! (Phasmophobia w/ Grian, Gem, and Skizz)
-          </p>
-          <p class="video-author">
-            impulseSV2
-          </p>
-          <p class="video-stats">
-            132K views &#x2022; 3 months ago
-          </p>
-        </div>
-      </div>
+    <div class="sidebar-link">
+      <img src="icons/explore.svg">
+      <div>Explore</div>
     </div>
+    <div class="sidebar-link">
+      <img src="icons/subscriptions.svg">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/originals.svg">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/youtube-music.svg">
+      <div>Youtube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/library.svg">
+      <div>Library</div>
+    </div>
+  </nav>
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/thumbnail4.jpeg">
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-picture">
-          <img class="profile-picture" src="channels/channel4.jpg">
+  <main>
+    <section class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=ZJRM74eTWiY&t=8s" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail1.jpeg">
+          </a>
+          <div class="video-time">12:00</div>
         </div>
-        <div class="video-info">
-          <p class="video-title">
-            Java Full Course for free ☕
-          </p>
-          <p class="video-author">
-            Bro Code
-          </p>
-          <p class="video-stats">
-            9.1M views &#x2022; 3 years ago
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/thumbnail5.jpeg">
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-picture">
-          <img class="profile-picture" src="channels/channel5.jpeg">
-        </div>
-        <div class="video-info">
-          <p class="video-title">
-            Harvard CS50 (2023) – Full Computer Science University Course
-          </p>
-          <p class="video-author">
-            freeCodeCamp.org
-          </p>
-          <p class="video-stats">
-            1.6M views &#x2022; 2 months ago
-          </p>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel1.jpg">
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=ZJRM74eTWiY&t=8s" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Fable 2 but it is 2024
+              </p>
+            </a>
+            <p class="video-author">
+              Call Me Kevin
+            </p>
+            <p class="video-stats">
+              284K views &#x2022; 1 Month ago
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/thumbnail6.jpeg">
-      </div>
-      <div class="video-info-grid">
-        <div class="channel-picture">
-          <img class="profile-picture" src="channels/channel6.jpeg">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=MB-E9xG3fMk&t=37s" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail2.jpeg">
+          </a>
+          <div class="video-time">16:23</div>
         </div>
-        <div class="video-info">
-          <p class="video-title">
-            Straight Line Mission Across Wales: Attempt 2 (Part 2)
-          </p>
-          <p class="video-author">
-            GeoWizard
-          </p>
-          <p class="video-stats">
-            679K views &#x2022; 3 years ago
-          </p>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel2.jpg">
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=MB-E9xG3fMk&t=37s" target="_blank" class="video-title-link">
+              <p class="video-title">
+                10 GIANT Products that Actually Work!
+              </p>
+            </a>
+            <p class="video-author">
+              DOPE or NOPE
+            </p>
+            <p class="video-stats">
+              6.6M views &#x2022; 4 years ago
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=zUmLVX98BiY&t=145s" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail3.jpg">
+          </a>
+          <div class="video-time">9:15</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel3.jpg">
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=zUmLVX98BiY&t=145s" target="_blank" class="video-title-link">
+              <p class="video-title">
+                We're Getting Brave! (Phasmophobia w/ Grian, Gem, and Skizz)
+              </p>
+            </a>
+            <p class="video-author">
+              impulseSV2
+            </p>
+            <p class="video-stats">
+              132K views &#x2022; 3 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=29s" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail4.jpeg">
+          </a>
+          <div class="video-time">12:00:00</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel4.jpg">
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=29s" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Java Full Course for free ☕
+              </p>
+            </a>
+            <p class="video-author">
+              Bro Code
+            </p>
+            <p class="video-stats">
+              9.1M views &#x2022; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=LfaMVlDaQ24&t=38s" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail5.jpeg">
+          </a>
+          <div class="video-time">1:54:00</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel5.jpeg">
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=LfaMVlDaQ24&t=38s" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Harvard CS50 (2023) – Full Computer Science University Course
+              </p>
+            </a>
+            <p class="video-author">
+              freeCodeCamp.org
+            </p>
+            <p class="video-stats">
+              1.6M views &#x2022; 2 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=slN6wXB3Z6c&t=59s" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail6.jpeg">
+          </a>
+          <div class="video-time">26:00</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel6.jpeg">
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=slN6wXB3Z6c&t=59s" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Straight Line Mission Across Wales: Attempt 2 (Part 2)
+              </p>
+            </a>
+            <p class="video-author">
+              GeoWizard
+            </p>
+            <p class="video-stats">
+              679K views &#x2022; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=ilvh7PShS9c" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail7.jpeg">
+          </a>
+          <div class="video-time">25:05</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel7.jpeg">
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=ilvh7PShS9c" target="_blank" class="video-title-link">
+              <p class="video-title">
+                My Daughter Survives WORLD'S STRICTEST PARENTS
+              </p>
+            </a>
+            <p class="video-author">
+              Jordan Matter
+            </p>
+            <p class="video-stats">
+              2.8M views &#x2022; 12 hours ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=ggWZoH9PeIU" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail9.jpeg">
+          </a>
+          <div class="video-time">25:09</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel9.jpeg">
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=ggWZoH9PeIU" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Camping in Alaska's Deepest Snow with a Dugout Survival Shelter
+              </p>
+            </a>
+            <p class="video-author">
+              Outdoor Boys
+            </p>
+            <p class="video-stats">
+              1.7M views &#x2022; 15 hours ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=krsBRQbOPQ4" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail8.jpeg">
+          </a>
+          <div class="video-time">16:59</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel8.jpeg">
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=krsBRQbOPQ4" target="_blank" class="video-title-link">
+              <p class="video-title">
+                $1 vs $250,000,000 Private Island!
+              </p>
+            </a>
+            <p class="video-author">
+              MrBeast
+            </p>
+            <p class="video-stats">
+              133M views &#x2022; 3 weeks ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=GEmuEWjHr5c" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail10.jpeg">
+          </a>
+          <div class="video-time">10:13</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel10.jpeg">
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=GEmuEWjHr5c" target="_blank" class="video-title-link">
+              <p class="video-title">
+                The Most Persistent Myth
+              </p>
+            </a>
+            <p class="video-author">
+              Veritasium
+            </p>
+            <p class="video-stats">
+              2.5M views &#x2022; 9 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=QkbcXcH5wa4" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail11.jpeg">
+          </a>
+          <div class="video-time">18:15</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel11.jpeg">
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=QkbcXcH5wa4" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Recreating Gordon Ramsay’s Scotch Egg Recipe From Taste | Reverse Engineering | Bon Appétit
+              </p>
+            </a>
+            <p class="video-author">
+              Bon Appétit
+            </p>
+            <p class="video-stats">
+              318k views &#x2022; 2 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=uAiN7BmUjTg" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail12.jpeg">
+          </a>
+          <div class="video-time">14:08</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel12.jpeg">
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=uAiN7BmUjTg" target="_blank" class="video-title-link">
+              <p class="video-title">
+                We Put a Rocket in a Football
+              </p>
+            </a>
+            <p class="video-author">
+              Dude Perfect
+            </p>
+            <p class="video-stats">
+              6.2M views &#x2022; 4 weeks ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
 
 </body>
 
